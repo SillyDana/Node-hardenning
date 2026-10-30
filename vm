@@ -1,0 +1,4 @@
+#First removal is avahi-daemon. It exposes computers address by entering a simple command. Therefore its easier for someone to leak your info. By removing this it turns off the local network auto-discovery.#
+#Second removal is telnet. It exposes info that goes through it, because telnet doesnt encrypt its data. But by removing telnet it may break some port analysis#
+#Third removal is samba. Samba exposes some ports on the net, fot example, TCP 445 or TCP 139. But without samba may break Windows-to-Linux File Sharing or network printing#
+#Fourth removal is vsftpd. Vsftpd exposes port 21 and transmits info like passwords and usernames in clear text. But without it users cant connect to this computer through port 21#
